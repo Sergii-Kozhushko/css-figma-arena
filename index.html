@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="https://kit.fontawesome.com/371146fef0.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Верстка Flex</title>
+</head>
+<body>
+    <!--Вертикальные Паддинги из фигмы берем максимальные, гор тоже-->
+    <header class="bg-aqua flex flex-justify--between header">
+        <img src="./images/logo.png" alt="Компания Icon. Логотип" />
+        <nav class="flex gap-20 nav">
+            <a href="#aboutus-a">О нас</a>
+            <a href="#projects-a">Проекты</a>
+            <a href="#contacts-a">Контакты</a>
+        </nav>
+        <div class="flex gap-20">
+            <a href="https://www.instagram.com/" target="_blank"><img src="./images/insta_icon.png" alt="Логотип Инстаграмм"></a>
+            <a href="#" target="_blank"><img src="./images/fb_icon.png" alt="Логотип Фейсбук"></a>
+            <a href="#" target="_blank"><img src="./images/li_icon.png" alt="Логотип Линкедин"></a>
+        </div>
+    </header>
+    
+        <main>
+            <section class="flex flex-justify--between">
+                <img src="./images/office.png" alt="Фотография нашего оффиса">
+                <div class="aboutus-textblock">
+                    <h1 class="text-black text-big" id="aboutus-a">О нас</h1>
+                
+                    <p class="text-reg ">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+            </section>
+            
+            <section class="projects-outer-block">
+                <h2 class="text-big text-black projects-padding" id="projects-a">Наши проекты</h2>
+                <div class="flex flex-justify--between projects-block">
+                    <article>
+                        
+                        <div class="position-relative gap-37">
+                            
+                            <img src="./images/arena.jpg" alt="Фотография нашего проекта">
+                            <div class="arena-text-block ">
+                                <h3 class="contacts-item--text text-white">
+                                Арена
+                                </h3>
+                                <p class="arena-text">Мы сделали самую красивую арену в Европе. Это открытие стало для нас прорывной точкой для развития на следующие десятилетия. Мы очень рады данному еву.
+                                </p> 
+                            </div>   
+                        </div>
+                    </article>
+                    <article class="arena2-article">
+                            <h3 class="contacts-item--text text-white">
+                                Арена
+                            </h3>
+                            <!--<img src="./images/arena.jpg" alt="Фотография нашего проекта">-->
+                            <p class="arena-text">Мы сделали самую красивую арену в Европе. Это открытие стало для нас прорывной точкой для развития на следующие десятилетия. Мы очень рады данному еву.
+                            </p>    
+                        
+                    </article>
+
+                    <article class="arena2-article">
+                        <h3 class="contacts-item--text text-white">
+                            Арена
+                        </h3>
+                        <!--<img src="./images/arena.jpg" alt="Фотография нашего проекта">-->
+                        <p class="arena-text">Мы сделали самую красивую арену в Европе. Это открытие стало для нас прорывной точкой для развития на следующие десятилетия. Мы очень рады данному еву.
+                        </p>    
+                    
+                </article>
+                    
+                    
+                </div>
+            </section>
+        </main>
+        <footer class="footer">    
+        <h2 class="text-black text-big" id="contacts-a">Контакты</h2>
+        <section class="flex flex-justify--between contacs-section">
+            <div class="flex flex-direction--column gap-25 contacts-item">
+                <i class="fa-solid fa-location-pin contacts-item--icon"></i>
+                <h4 class="contacts-item--text text-grey">АДРЕС:</h4>
+                <address class="contacts-item--text">
+                    НЕВСКИЙ ПРОСПЕКТ 140,<br>
+                    ОФИС 140-142
+                </address>
+            </div>
+            <div class="flex flex-direction--column gap-25 contacts-item">
+                <i class="fa-solid fa-phone contacts-item--icon"></i>
+                <h4 class="contacts-item--text text-grey">
+                    ТЕЛЕФОН:
+                </h4>
+                <div class="contacts-item--text">
+                    <a class="contacts-link--phone" href="tel:+88121112233">8 (812) 111-22-33</a><br>
+                    <a class="contacts-link--phone" href="tel:+88121112233">8 (812) 111-22-33</a>
+                </div>
+            </div>
+            <div class="flex flex-direction--column gap-25 contacts-item">
+                <i class="fa-regular fa-clock contacts-item--icon"></i>
+                <h4 class="contacts-item--text text-grey">ВРЕМЯ РАБОТЫ:</h4>
+                <p class="contacts-item--text">ПН-СБ</br>
+                <time>10:00</time> - <time>20:00</time>
+                </p>
+            </div>
+            <div class="flex flex-direction--column gap-25 contacts-item">
+                <i class="fa-regular fa-envelope contacts-item--icon"></i>
+                <h4 class="contacts-item--text text-grey">E-MAIL:</h4>
+                <a href="mailto:info@vip.ru" class="contacts-link--email contacts-item--text">INFO@VIP.RU</a>
+            </div>
+        </section>
+        </footer>
+</body>
+</html>
