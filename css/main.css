@@ -36,9 +36,7 @@
     justify-content: space-between;
 }
 
-.flex-justify-new{
-    /*justify-content: ;*/
-}
+
 .flex-direction--column{
     flex-direction: column;
 }
@@ -59,7 +57,6 @@
     line-height: 30px;
     font-size: 25px;
     font-family: "Inter-regular", Times, serif;
-    
 }
 .nav a {
     text-decoration: none;
@@ -92,7 +89,8 @@ footer >h2{
     position: absolute;
     width: 364px;
     left: 0;
-    top: 240px;
+    /* top: 240px; */
+    bottom: 25px;
     margin-left: 36px;
     margin-right: 36px;
 }
@@ -102,7 +100,14 @@ footer >h2{
     font-weight: 400;
     color: #FFFFFF;
 }
-
+.width-50{
+    width: 50%;
+}
+.centered{
+    display: flex;
+    justify-content: center;
+    
+}
 .arena2-article{
     background-image: url("../images/arena.jpg");
     display: flex;
@@ -115,13 +120,18 @@ footer >h2{
 }
 .projects-outer-block{
     padding-left: 64px;
+    padding-right: 64px;
     padding-top: 124px;
-
+    padding-bottom: 126px;
+    background-color: #DCFFEB;
+    
 }
-.projects-padding{
+
+.padding-bottom--50{
     padding-bottom: 50px;
 }
-.projects-block{
+
+.margin-right--64{
     
     margin-right: 64px;
 }
@@ -131,16 +141,13 @@ footer >h2{
 }
 
 .aboutus-textblock{
-    margin-left: 62px;
-    margin-right: 70px;
-    text-align: justify;
-    align-items: center;
-    justify-content: center;
-    margin-left: 70px;
-    margin-right: 70px;
     display: flex;
     flex-direction: column;
-    
+    justify-content: center;
+    padding-left: 70px;
+    padding-right: 70px;
+    text-align: justify;
+    align-items: center;
 }
 .aboutus-textblock p{
     text-align:justify;
@@ -169,7 +176,7 @@ h1{
     text-align: center;
 
 }
-.contacts-item--text{
+.title--oswald-24{
     font-size: 24px;
     line-height: 36px;
     font-family: "Oswald-Medium", Times, serif;
